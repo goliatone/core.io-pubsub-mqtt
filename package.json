@@ -1,0 +1,35 @@
+{
+  "name": "core.io PubSub MQTT",
+  "version": "0.0.0",
+  "description": "core.io PubSub transport layer providing MQTT suppor",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goliatone/core.io PubSub MQTT.git"
+  },
+  "keywords": [
+    "core.io"
+  ],
+  "author": "goliatone <@burgosemi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goliatone/core.io PubSub MQTT/issues"
+  },
+  "homepage": "https://github.com/goliatone/core.io PubSub MQTT#readme",
+  "devDependencies": {
+    "bogota": "^2.0.4",
+    "proxyquire": "^1.7.11",
+    "sinon": "^1.17.7",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "gextend": "^0.3.0",
+    "mqtt": "^2.8.1",
+    "mqtt-match": "^1.0.2"
+  }
+}
