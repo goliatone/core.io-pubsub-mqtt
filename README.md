@@ -3,9 +3,10 @@
 
 
 This is a sample project. To get started:
+
 ```
-$ npm i core.io PubSub MQTT
+$ npm i -S core.io-pubsub-mqtt
 ```
 
 ## License
-® License  by goliatone
+® License MIT by goliatone
