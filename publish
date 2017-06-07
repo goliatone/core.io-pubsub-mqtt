@@ -13,12 +13,16 @@ function patch {
 }
 
 function help {
-    echo "$0 <task> <args>"
-    echo "Tasks:"
-    compgen -A function | cat -n
+  echo "$0 [<major|minor|patch>]"
+  echo "Publishes package to npm and git."
+  echo "\t1 major"
+  echo "\t4 minor"
+  echo "\t5 patch"
 }
 
-if output=$(git status --untracked-files=no --porcelain) && [ -z "$output" ]; then
+if [ "$1" == "help" ]; then
+  help
+elif output=$(git status --untracked-files=no --porcelain) && [ -z "$output" ]; then
   # Working directory clean
   TIMEFORMAT="Published in %3lR"
   time ${@:-patch}
