@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goliatone/core.io PubSub MQTT.git"
+    "url": "git+https://github.com/goliatone/core.io-pubsub-mqtt.git"
   },
   "keywords": [
     "core.io"
   ],
-  "author": "goliatone <@burgosemi@gmail.com>",
+  "author": "goliatone <hello@goliatone.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goliatone/core.io PubSub MQTT/issues"
+    "url": "https://github.com/goliatone/core.io-pubsub-mqtt/issues"
   },
-  "homepage": "https://github.com/goliatone/core.io PubSub MQTT#readme",
+  "homepage": "https://github.com/goliatone/core.io-pubsub-mqtt#readme",
   "devDependencies": {
     "bogota": "^2.0.4",
     "proxyquire": "^1.7.11",
