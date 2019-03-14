@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "gextend": "^0.3.0",
+    "gkeypath": "^0.7.2",
     "mqtt": "^2.8.1",
     "mqtt-match": "^1.0.2",
     "uuid": "^3.1.0"
