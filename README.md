@@ -1,7 +1,8 @@
 ## core.io PubSub MQTT
-This package is part of the [core.io][core.io] set of libraries, meaning it can be used independently or inside an **core.io** application.
 
-To install
+This package is part of the [core.io][https://github.com/goliatone/application-cor] set of libraries, meaning it can be used independently or inside an **core.io** application.
+
+To install:
 
 ```
 $ npm i -S core.io-pubsub-mqtt
