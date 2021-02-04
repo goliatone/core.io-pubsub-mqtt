@@ -1,6 +1,6 @@
 {
   "name": "core.io-pubsub-mqtt",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "core.io PubSub transport layer providing MQTT suppor",
   "main": "index.js",
   "scripts": {
