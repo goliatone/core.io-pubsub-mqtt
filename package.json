@@ -28,10 +28,10 @@
     "watch": "^1.0.2"
   },
   "dependencies": {
-    "gextend": "^0.3.0",
-    "gkeypath": "^0.7.2",
-    "mqtt": "^2.8.1",
-    "mqtt-match": "^1.0.2",
+    "gextend": "^0.8.0",
+    "gkeypath": "^0.13.0",
+    "mqtt": "^4.2.8",
+    "mqtt-match": "^2.0.3",
     "uuid": "^3.1.0"
   }
 }
