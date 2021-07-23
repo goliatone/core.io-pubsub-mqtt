@@ -147,6 +147,13 @@ Configuration options:
 - `fieldName`: String representing the payload field name, defaults to `timestamp`.
 - `getTimestamp`: Function to generate the `timestamp`. Default to `Date.now()`
 
+## TODO
+
+- [ ] Add buffer for messages send before ready
+- [ ] Check online/offline before publishing
+    - [ ] if offline enqueue
+- [ ] on connect
+    - [ ] check queue and publish
 
 
 ## License
