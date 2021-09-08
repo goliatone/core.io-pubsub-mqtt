@@ -21,10 +21,10 @@
   "homepage": "https://github.com/goliatone/core.io-pubsub-mqtt#readme",
   "devDependencies": {
     "bogota": "^2.0.4",
-    "proxyquire": "^1.7.11",
-    "sinon": "^1.17.7",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.3",
+    "proxyquire": "^2.1.3",
+    "sinon": "^11.1.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.3.1",
     "watch": "^1.0.2"
   },
   "dependencies": {
@@ -32,6 +32,6 @@
     "gkeypath": "^0.13.0",
     "mqtt": "^4.2.8",
     "mqtt-match": "^2.0.3",
-    "uuid": "^3.1.0"
+    "uuid": "^8.3.2"
   }
 }
