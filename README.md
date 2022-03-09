@@ -42,9 +42,9 @@ Your application setup:
 ```js
 class ApiImageGetCommand {
     execute(event) {
-        return { 
-            success: true, 
-            message: 'This is my command response' 
+        return {
+            success: true,
+            message: 'This is my command response'
         };
     }
 }
@@ -89,15 +89,15 @@ module.exports = {
     /**
      * These functions will be called in the
      * order they are added
-     */ 
+     */
     responseMiddleware: [
         function(response, data, error) {
-            
+
             if(data && !error) {
                 response.data = data;
                 response.success = true;
             }
-            
+
             if(error && !data) {
                 response.error = error;
                 response.success = false;
@@ -105,7 +105,7 @@ module.exports = {
 
             return response;
         },
-        
+
     ]
 };
 ```
@@ -151,3 +151,6 @@ Configuration options:
 
 ## License
 ® License MIT 2017 by goliatone
+
+TODO:
+- [ ] Implement a pin/pong flow so that we can easily build on top of it
