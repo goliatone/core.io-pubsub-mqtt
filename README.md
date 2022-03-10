@@ -18,7 +18,7 @@ This module provides a request/response flow that you can leverage to replicate 
 
 ```js
 pubsub.request('ci/registry/list').then(response => {
-    console.log(repsonse.message) //This is my reponse
+    console.log(response.message) //This is my response
 }).catch(error => {
     //handle error
 });
@@ -79,9 +79,9 @@ You can add response middleware to build the payload of your response object.
 Note that the middleware will be applied before applying any transformations done in during the payload publish.
 
 
-In your config file:
+In your configuration file:
 
-* config/pubsub.js:
+* `config/pubsub.js`:
 
 ```js
 module.exports = {
@@ -112,7 +112,7 @@ module.exports = {
 
 #### Publish Payload Transformers
 
-You can modify the payload before being published ove MQTT. By default we have two transformers, one to add a [timestamp](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.timestamp.js) and one to add a [uuid](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.uuid.js) to the emitted payload.
+You can modify the payload before being published over MQTT. By default we have two transformers, one to add a [timestamp](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.timestamp.js) and one to add a [uuid](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.uuid.js) to the emitted payload.
 
 
 ##### Ensure UUID
