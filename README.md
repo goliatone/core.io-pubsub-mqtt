@@ -18,7 +18,7 @@ This module provides a request/response flow that you can leverage to replicate 
 
 ```js
 pubsub.request('ci/registry/list').then(response => {
-    console.log(repsonse.message) //This is my reponse
+    console.log(response.message) //This is my response
 }).catch(error => {
     //handle error
 });
@@ -42,9 +42,9 @@ Your application setup:
 ```js
 class ApiImageGetCommand {
     execute(event) {
-        return { 
-            success: true, 
-            message: 'This is my command response' 
+        return {
+            success: true,
+            message: 'This is my command response'
         };
     }
 }
@@ -79,9 +79,9 @@ You can add response middleware to build the payload of your response object.
 Note that the middleware will be applied before applying any transformations done in during the payload publish.
 
 
-In your config file:
+In your configuration file:
 
-* config/pubsub.js:
+* `config/pubsub.js`:
 
 ```js
 module.exports = {
@@ -89,15 +89,15 @@ module.exports = {
     /**
      * These functions will be called in the
      * order they are added
-     */ 
+     */
     responseMiddleware: [
         function(response, data, error) {
-            
+
             if(data && !error) {
                 response.data = data;
                 response.success = true;
             }
-            
+
             if(error && !data) {
                 response.error = error;
                 response.success = false;
@@ -105,14 +105,14 @@ module.exports = {
 
             return response;
         },
-        
+
     ]
 };
 ```
 
 #### Publish Payload Transformers
 
-You can modify the payload before being published ove MQTT. By default we have two transformers, one to add a [timestamp](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.timestamp.js) and one to add a [uuid](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.uuid.js) to the emitted payload.
+You can modify the payload before being published over MQTT. By default we have two transformers, one to add a [timestamp](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.timestamp.js) and one to add a [uuid](https://github.com/goliatone/core.io-pubsub-mqtt/blob/master/lib/transforms/ensure.uuid.js) to the emitted payload.
 
 
 ##### Ensure UUID
@@ -151,3 +151,6 @@ Configuration options:
 
 ## License
 ® License MIT 2017 by goliatone
+
+TODO:
+- [ ] Implement a pin/pong flow so that we can easily build on top of it
